@@ -1,0 +1,66 @@
+# Rubocop configuration file
+# See: https://github.com/bbatsov/rubocop/blob/master/config/default.yml
+
+require: rubocop-performance
+
+Rails:
+  Enabled: true
+
+# Documentation
+
+Documentation:
+  Enabled: false
+
+# Layout
+
+Layout/AlignParameters:
+  EnforcedStyle: with_fixed_indentation
+
+Layout/IndentFirstArgument:
+  EnforcedStyle: consistent
+
+Layout/MultilineMethodCallBraceLayout:
+  EnforcedStyle: symmetrical
+
+Layout/MultilineMethodCallIndentation:
+  EnforcedStyle: indented
+
+Layout/SpaceInLambdaLiteral:
+  EnforcedStyle: require_space
+
+Layout/SpaceInsideHashLiteralBraces:
+  EnforcedStyle: space
+
+# Metrics
+
+Metrics:
+  Enabled: false
+
+# Style
+
+Style/AndOr:
+  EnforcedStyle: conditionals
+
+Style/ClassAndModuleChildren:
+  Enabled: false
+
+Style/FormatStringToken:
+  Enabled: false
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Style/Lambda:
+  Enabled: false
+
+Style/SymbolArray:
+  MinSize: 4
+
+Style/WordArray:
+  MinSize: 10
+
+Style/TrailingCommaInArrayLiteral:
+  EnforcedStyleForMultiline: consistent_comma
+
+Style/TrailingCommaInHashLiteral:
+  EnforcedStyleForMultiline: consistent_comma
